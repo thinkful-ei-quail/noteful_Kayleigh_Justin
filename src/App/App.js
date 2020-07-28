@@ -1,0 +1,29 @@
+import React, { Component }  from 'react';
+// import { Route } from 'react-router-dom'
+import './App.css';
+import Header from '../Header/Header';
+import Folders from '../Folders/Folders';
+import Notes from '../Notes/Notes';
+import DummyStore from '../dummy-store';
+// import MainPage from '../MainPage';
+// import NotFoundPage from '../NotFoundPage';
+
+class App extends Component {
+  state = {
+    STORE: DummyStore
+  }
+
+  render() {
+    return (
+      <main className="App">
+        
+        <Header />
+        <Folders />
+        <Notes />
+
+      </main>
+    );
+  }
+}
+
+export default App;
