@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-//import './';
-//import  from './';
+import './Notes.css';
+import NoteList from '../NoteList/NoteList';
 
 class Notes extends Component {
 
@@ -16,6 +16,9 @@ class Notes extends Component {
         return(
             <div className='container'>
                <p>Notes go here</p>
+               <NoteList
+                    NotesStore={this.props.NotesStore}
+               />
             </div>
         );
     }
