@@ -10,7 +10,7 @@ class FolderList extends Component {
       <div>
          {this.props.FolderStore.map((item,idx) => (
             <FolderItem
-             folderId= {'Folder '+ (idx+1)}
+            //  id= {'Folder '+ (idx+1)}
              key={item.id}
              id ={item.id}
             //  item= {item}

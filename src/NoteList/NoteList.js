@@ -6,18 +6,20 @@ class NoteList extends Component {
 
 
     render() {
+        console.log("App -> NoteList", this.props.NotesStore)
         return(
             <div className='container'>
             
-
-            />
-            {this.props.NotesStore.map((item,idy) => (
+            {this.props.NotesStore.map((note,idy) => (
             <NoteItem
-             folderId= {'Folder '+ (idy+1)}
-             key={item.id}
-             id ={item.id}
-            //  item= {item}
-             name= {item.name}
+              folderId= {note.folderId}
+              noteId= {note.id}
+              key={'Note '+ (idy+1)}
+              // NoteId ={note.folderId}
+              //  item= {item}
+              name= {note.name}
+              content={note.content}
+              modified={note.modified}
            />
          ))}
 
