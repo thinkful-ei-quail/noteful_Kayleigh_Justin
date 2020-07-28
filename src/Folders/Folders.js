@@ -13,14 +13,13 @@ class Folders extends Component {
     // }
 
     render() {
-        console.log("App -> FolderStore", this.props.FolderStore)
+        //console.log("App -> FolderStore", this.props.FolderStore)
         return(
             <div className='container'>
                 <FolderList 
                     FolderStore={this.props.FolderStore}
                 />
-
-                {console.log("App -> FolderStore", this.props.FolderStore)}
+                <p>folders go here</p>
                {/* {this.props.DummyStore} */}
             </div>
         );

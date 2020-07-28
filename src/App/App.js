@@ -14,7 +14,7 @@ class App extends Component {
   }
 
   render() {
-    console.log("App -> DummyStore", DummyStore)
+
     return (
       <main className="App">
         
@@ -32,3 +32,4 @@ class App extends Component {
 }
 
 export default App;
+ 

@@ -12,7 +12,7 @@ class Notes extends Component {
     // }
 
     render() {
-        console.log("App -> NotesStore", this.props.NotesStore)
+        //console.log("App -> NotesStore", this.props.NotesStore)
         return(
             <div className='container'>
                <p>Notes go here</p>
