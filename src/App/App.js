@@ -14,12 +14,17 @@ class App extends Component {
   }
 
   render() {
+    console.log("App -> DummyStore", DummyStore)
     return (
       <main className="App">
         
         <Header />
-        <Folders />
-        <Notes />
+        <Folders 
+          FolderStore={this.state.STORE.folders}
+        />
+        <Notes 
+          NotesStore={this.state.STORE.notes}
+        />
 
       </main>
     );
