@@ -19,6 +19,8 @@ class App extends Component {
       <main className="App">
         
         <Header />
+        {/*TODO: Should we map folders? */}
+
         {/* Side bar */}
         <Route exact path={['/','/folder/:folderId']} render={(routeProps) => 
           <Folders 
